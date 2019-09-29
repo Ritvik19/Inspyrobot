@@ -1,0 +1,44 @@
+:root{
+  --c1: #394a6d;
+  --c2: #d9eeec;
+  --c3: #64b2cd;
+  --c4: #da9833;
+}
+
+*, h1, h2, h3, h4, h5, h6{
+  font-family: 'Kanit', sans-serif;
+}
+
+body{
+  background-color: var(--c1);
+}
+
+.jumbotron{
+  background-color: var(--c1) !important;
+  color: var(--c4) !important;
+}
+
+.btn{
+  background-color: var(--c3) !important;
+  color: var(--c2);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--c1); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--c4);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c4);
+}
