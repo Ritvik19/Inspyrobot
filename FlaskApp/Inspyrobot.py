@@ -4,7 +4,7 @@ from nltk import ngrams
 
 app = Flask(__name__)
 
-DIR = 'E:/Models/Inspyrobot-Probabilistic-v4'
+DIR = 'E:/Models/Inspyrobot'
 n = 4
 q = lambda x : list(ngrams(x.lower().split(), n, pad_left=True, pad_right=False,  left_pad_symbol=''))[-1]
 with open(f'{DIR}/model.json', 'r') as f:
@@ -23,7 +23,7 @@ def home():
 
 @app.route('/inspyre/',methods=['POST'])
 def inspyre():
-    text = str(random.choice(vocab))#'what is an artist'#
+    text = 'what is an artist'#str(random.choice(vocab))#
     sentence_finished = False
     while not sentence_finished:
         r = random.random()
