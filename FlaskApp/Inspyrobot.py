@@ -23,7 +23,7 @@ def home():
 
 @app.route('/inspyre/',methods=['POST'])
 def inspyre():
-    text = 'what is an artist'#str(random.choice(vocab))#
+    text = str(random.choice(vocab))
     sentence_finished = False
     while not sentence_finished:
         r = random.random()

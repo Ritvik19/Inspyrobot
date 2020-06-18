@@ -1,8 +1,9 @@
 :root {
-    --c1: #394a6d;
-    --c2: #e7dfd5;
-    --c3: #64b2cd;
-    --c4: #da9833;
+    --c0: #343a40;
+    --c1: #204051;
+    --c2: #3b6978;
+    --c3: #84a9ac;
+    --c4: #e7dfd5;
 }
 
 *,
@@ -21,7 +22,7 @@ body {
 }
 
 .body {
-    background-color: rgba(51, 80, 91, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.4) !important;
     min-height: 100vh;
 }
 
@@ -32,8 +33,7 @@ body {
 
 .jumbotron h1,
 .jumbotron p {
-    margin: 0 !important;
-    color: var(--c2) !important;
+    color: var(--c0) !important;
 }
 
 ::-webkit-scrollbar {
@@ -41,17 +41,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--c1);
+    background: var(--c4);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--c4);
+    background: var(--c3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--c4);
+    background: var(--c3);
 }
 
 #msgbox {
-    max-width: 640px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
