@@ -1,0 +1,57 @@
+:root {
+    --c0: #343a40;
+    --c1: #204051;
+    --c2: #3b6978;
+    --c3: #84a9ac;
+    --c4: #e7dfd5;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-image: url('/static/bg.jpg');
+    background-size: cover;
+}
+
+.body {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    min-height: 100vh;
+}
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: var(--c1) !important;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: var(--c0) !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c3);
+}
+
+#msgbox {
+    background-color: rgba(255, 255, 255, 0.2);
+}
