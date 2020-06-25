@@ -22,8 +22,9 @@
                 <form action="/inspyre/" method="post">
                     <button class="btn btn-lg btn-dark" type="submit">Inspyre Me!</button>
                 </form>
-                <br><br><br><br>
+                <br><br><br><br> {% if message %}
                 <div class="w3-large w3-padding-large" id="msgbox">{{ message }}</div>
+                {% endif %}
             </div>
         </div>
     </div>

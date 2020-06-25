@@ -4,7 +4,7 @@ from nltk import ngrams
 
 app = Flask(__name__)
 
-DIR = 'E:/Models/Inspyrobot'
+DIR = 'E:/Models/Inspyrobot/Probabilistic'
 n = 4
 q = lambda x : list(ngrams(x.lower().split(), n, pad_left=True, pad_right=False,  left_pad_symbol=''))[-1]
 with open(f'{DIR}/model.json', 'r') as f:
